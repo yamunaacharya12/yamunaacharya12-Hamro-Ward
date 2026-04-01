@@ -77,11 +77,11 @@
                 <div class="card-body-custom row g-3">
                     <div class="col-md-6">
                         <label class="form-label mb-1 fw-medium small text-secondary">Full Name (Nepali)</label>
-                        <asp:TextBox ID="txtNameNep" runat="server" CssClass="form-control" placeholder="राम बहादुर थापा" />
+                        <asp:TextBox ID="txtNameNep" runat="server" CssClass="form-control" placeholder="इन्द्र बहादुर तामाङ" />
                     </div>
                     <div class="col-md-6">
                         <label class="form-label mb-1 fw-medium small text-secondary">Full Name (English)</label>
-                        <asp:TextBox ID="txtNameEng" runat="server" CssClass="form-control" placeholder="Ram Bahadur Thapa" />
+                        <asp:TextBox ID="txtNameEng" runat="server" CssClass="form-control" placeholder="Indra Bahadur Tamang" />
                     </div>
                     <div class="col-md-6">
                         <label class="form-label mb-1 fw-medium small text-secondary">Date of Birth (B.S.)</label>

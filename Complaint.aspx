@@ -10,6 +10,7 @@
 
     <style>
         body {
+            margin-top: 60px;
             background-color: #f3f6fb;
         }
 

@@ -14,7 +14,7 @@ namespace HamroWard
     public partial class Citizenship
     {
 
-        /// <summary>https://localhost:44337/Citizenship.aspx.designer.cs
+        /// <summary>
         /// txtNameNep control.
         /// </summary>
         /// <remarks>
