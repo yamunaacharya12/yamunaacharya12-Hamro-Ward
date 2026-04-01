@@ -1,9 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="home.master" CodeBehind="signup.aspx.cs" Inherits="HamroWard.Signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-<div class="container">
+<div class="container mt-5 pt-4">
     <div class="row justify-content-center align-items-center" style="min-height:90vh;">
-        <div class="col-lg-5 col-md-7 col-sm-10">
+        <div class="col-lg-6 col-md-5 col-sm-8">
             <div class="card shadow-lg border-0 rounded-4">
                 <div class="card-body p-4">
 
