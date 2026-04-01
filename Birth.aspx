@@ -44,44 +44,6 @@
     <div class="mx-auto" style="width:64px; height:4px; background-color:#dc3545;"></div>
 </div>
 
-<!-- Dipesh Mantri Section -->
-<section style="background: linear-gradient(to right, #fef2f2, #ffffff, #eff6ff);" class="py-5">
-    <div class="container">
-        <div class="bg-white border-top border-4 border-danger shadow-lg rounded-4 overflow-hidden">
-            <div class="row align-items-center g-0">
-
-                <!-- Image -->
-                <div class="col-md-4 bg-danger d-flex align-items-center justify-content-center p-4">
-                    <img src="/image.png"
-                         alt="नेपालका प्रधानमन्त्री"
-                         class="img-fluid rounded-4 shadow border border-4 border-white"
-                         style="max-height:320px;" />
-                </div>
-
-                <!-- Info -->
-                <div class="col-md-8 p-5">
-                    <h2 class="fw-bold text-dark mb-2">माननीय दिपेश ढकाल</h2>
-                    <p class="fs-5 fw-semibold text-danger mb-4">सम्माननीय प्रधानमन्त्री</p>
-                    <div class="row text-secondary fs-6 g-3">
-                        <div class="col-sm-6"><strong>उमेर:</strong> 22 वर्ष</div>
-                        <div class="col-sm-6"><strong>निवास:</strong> काठमाडौं, नेपाल, Baluwatar-6</div>
-                        <div class="col-sm-6"><strong>कार्यालय:</strong> प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय</div>
-                        <div class="col-sm-6"><strong>कार्यकाल प्रारम्भ:</strong> २०२४</div>
-                    </div>
-                    <p class="mt-4 text-muted lh-lg text-justify">
-                        माननीय दिपेश ढकाल नेपाल सरकारको नेतृत्व गर्दै संघीय शासन
-                        प्रणालीअन्तर्गत नीति निर्माण, सुशासन प्रवर्द्धन तथा राष्ट्रिय
-                        विकासका कार्यक्रमहरू प्रभावकारी रूपमा कार्यान्वयन गरिरहनुभएको छ।
-                        उहाँको नेतृत्वमा डिजिटल रूपान्तरण, सार्वजनिक सेवा आधुनिकीकरण तथा
-                        नागरिक केन्द्रित प्रशासनलाई प्राथमिकता दिइएको छ।
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Services Section -->
 <section class="min-vh-100 bg-light py-5">
     <div class="container">
@@ -198,5 +160,8 @@
         </div>
     </div>
 </div>
+
+     
+    <!-- testing the git -->
 
 </asp:Content>
