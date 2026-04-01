@@ -106,7 +106,7 @@
     }
 
     .service-title {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-bottom: 10px;
         font-weight: 700;
     }
@@ -182,59 +182,59 @@
 
     <div class="popular-grid">
 
-    <!-- Passport -->
+   <%-- <!-- Passport -->
     <div class="service-card">
         <h3 class="service-title">Apply for Passport</h3>
         <p class="service-desc">
             Submit your passport application online with digital document upload and tracking.
         </p>
          <a href="<%= ResolveUrl("~/passport.aspx") %>" class="btn-start">Get Started</a>
-    </div>
+    </div>--%>
 
-    <!-- Birth Registration -->
+    <!-- Apply for Birth Certificate -->
     <div class="service-card">
-        <h3 class="service-title">Birth Registration</h3>
+        <h3 class="service-title">Apply for Birth Certificate</h3>
         <p class="service-desc">
             Register birth certificate online with official verification.
         </p>
-        <a href="<%= ResolveUrl("~/birth.aspx") %>" class="btn-start">Get Started</a>
+        <a href="<%= ResolveUrl("~/birth.aspx") %>" class="btn-start">Apply Now</a>
     </div>
 
     <!-- Death Registration -->
     <div class="service-card">
-        <h3 class="service-title">Death Registration</h3>
+        <h3 class="service-title">Apply for Death Certificate</h3>
         <p class="service-desc">
             Register death certificate records for official documentation.
         </p>
-         <a href="<%= ResolveUrl("~/deathregistration/deathregistration.aspx") %>" class="btn-start">Get Started</a>
+         <a href="<%= ResolveUrl("~/deathregistration/deathregistration.aspx") %>" class="btn-start">Apply Now</a>
     </div>
 
     <!-- Migration Certificate -->
     <div class="service-card">
-        <h3 class="service-title">Migration Certificate</h3>
+        <h3 class="service-title">Apply for Migration Certificate</h3>
         <p class="service-desc">
             Apply for migration certificate for residential record transfer.
         </p>
-        <a href="#" class="btn-start">Get Started</a>
+        <a href="#" class="btn-start">Apply Now</a>
     </div>
 
     <!-- Citizenship -->
     <div class="service-card">
-        <h3 class="service-title">Citizenship Certificate</h3>
+        <h3 class="service-title">Apply for Citizenship Certificate</h3>
         <p class="service-desc">
             Apply for citizenship certificate online.
         </p>
-        <a href="<%= ResolveUrl("~/citizenship.aspx") %>" class="btn-start">Get Started</a>
+        <a href="<%= ResolveUrl("~/citizenship.aspx") %>" class="btn-start">Apply Now</a>
     </div>
 
-    <!-- Driver's License -->
+  <%--  <!-- Driver's License -->
     <div class="service-card">
         <h3 class="service-title">Renew Driver's License</h3>
         <p class="service-desc">
             Renew your driver's license online with instant confirmation.
         </p>
         <a href="https://applydlnew.dotm.gov.np/" target="_blank" class="btn-start">Get Started</a>
-    </div>
+    </div>--%>
 
     <!-- Property Tax -->
     <div class="service-card">
@@ -242,16 +242,16 @@
         <p class="service-desc">
             Secure online portal for property tax payment.
         </p>
-        <a href="<%= ResolveUrl("~/property.aspx") %>" class="btn-start">Get Started</a>
+        <a href="<%= ResolveUrl("~/property.aspx") %>" class="btn-start">Apply Now</a>
     </div>
 
     <!-- Business Registration -->
     <div class="service-card">
-        <h3 class="service-title">Business Registration</h3>
+        <h3 class="service-title">Apply for Business Registration</h3>
         <p class="service-desc">
             Register your business with streamlined digital processing.
         </p>
-        <a href="https://application.ocr.gov.np/" target="_blank" class="btn-start">Get Started</a>
+        <a href="https://application.ocr.gov.np/" target="_blank" class="btn-start">Apply Now</a>
     </div>
 
 </div>

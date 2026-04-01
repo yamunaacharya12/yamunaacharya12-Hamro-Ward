@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Death Registration" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="deathregistration.aspx.cs" Inherits="xyz.deathregistration" %>
+﻿<%@ Page Title="Death Registration" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="deathregistration.aspx.cs" Inherits="HamroWard.deathregistration" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <%-- Move Styles to the top of the content block --%>
@@ -154,5 +154,4 @@
         </div>
     </section>
 
-   
 </asp:Content>

@@ -44,7 +44,7 @@
     <div class="mx-auto" style="width:64px; height:4px; background-color:#dc3545;"></div>
 </div>
 
-<!-- Dipesh Mantri Section -->
+<%--<!-- Dipesh Mantri Section -->
 <section style="background: linear-gradient(to right, #fef2f2, #ffffff, #eff6ff);" class="py-5">
     <div class="container">
         <div class="bg-white border-top border-4 border-danger shadow-lg rounded-4 overflow-hidden">
@@ -80,7 +80,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>--%>
 
 <!-- Services Section -->
 <section class="min-vh-100 bg-light py-5">

@@ -67,7 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Birth.aspx" />
+    <Content Include="Birthregistration\ApplyNew.aspx" />
+    <Content Include="Birthregistration\Birth.aspx" />
     <Content Include="Citizenship.aspx" />
     <Content Include="Complaint.aspx" />
     <Content Include="contact.aspx" />
@@ -92,11 +93,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Birth.aspx.cs">
+    <Compile Include="Birthregistration\ApplyNew.aspx.cs">
+      <DependentUpon>ApplyNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Birthregistration\ApplyNew.aspx.designer.cs">
+      <DependentUpon>ApplyNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Birthregistration\Birth.aspx.cs">
       <DependentUpon>Birth.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Birth.aspx.designer.cs">
+    <Compile Include="Birthregistration\Birth.aspx.designer.cs">
       <DependentUpon>Birth.aspx</DependentUpon>
     </Compile>
     <Compile Include="Citizenship.aspx.cs">

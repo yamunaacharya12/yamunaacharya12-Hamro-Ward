@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace xyz.Deathregistration
+namespace HamroWard.Deathregistration
 {
 
 

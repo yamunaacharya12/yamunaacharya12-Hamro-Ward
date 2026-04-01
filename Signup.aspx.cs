@@ -1,28 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-
-using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace HamroWard
 {
     public partial class Signup : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
         protected void BtnSignUp_Click(object sender, EventArgs e)
         {
-            // Updated connection string
-            string connString = @"Data Source=DESKTOP-AMMHF6M;Initial Catalog=signUpDB;Integrated Security=True;";
+            string connString = ConfigurationManager.ConnectionStrings["MyConn"].ConnectionString;
 
-            // Use parameters (@name, etc.) instead of string concatenation
             string query = "INSERT INTO signUpDbTable (fullName, userName, password, confirmPassword) VALUES (@name, @user, @pass, @confirm)";
 
             using (SqlConnection con = new SqlConnection(connString))

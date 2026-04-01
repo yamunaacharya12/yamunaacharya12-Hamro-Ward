@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.UI;
 
-namespace xyz
+namespace HamroWard
 
 {
     public partial class deathregistration : System.Web.UI.Page

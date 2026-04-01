@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RequestCopy.aspx.cs" Inherits="xyz.Deathregistration.RequestCopy" %>
+﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RequestCopy.aspx.cs" Inherits="HamroWard.Deathregistration.RequestCopy" %>
 
 <!DOCTYPE html>
 <html>

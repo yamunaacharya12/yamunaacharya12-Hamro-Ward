@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CancelRecord.aspx.cs" Inherits="HamroWard.Deathregistration.CancelRecord" %>
+﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CancelRecord.aspx.cs" Inherits="HamroWard.Deathregistration.CancelRecord" %>
 
 <!DOCTYPE html>
 <html>

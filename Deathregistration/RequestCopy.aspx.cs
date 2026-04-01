@@ -2,7 +2,7 @@
 using System.IO;
 using System.Web.UI;
 
-namespace xyz.Deathregistration
+namespace HamroWard.Deathregistration
 {
     public partial class RequestCopy : System.Web.UI.Page
     {
