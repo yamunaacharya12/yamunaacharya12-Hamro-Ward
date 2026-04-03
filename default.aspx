@@ -2,41 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-  <%--  <!-- HERO -->
-    <div>
-       <img src="slider/ward.jpeg" 
-     class="img-fluid w-100" 
-     style="height:80vh; object-fit:cover;">
-    </div>
-    <section class="hero">
-        <h1>डिजिटल वडा सेवा - Hamro Ward</h1>
-        <p>आफ्नो वडा सेवाहरु छिटो र सजिलो / Your ward services made simple and accessible</p>
-
-        <div class="mt-4">
-            <a href="Service.aspx" class="hero-btn green">
-                <i class="bi bi-file-earmark-text"></i>
-                <br />
-                सेवा आवेदन
-                <br />
-                <small>Apply for Service</small>
-            </a>
-            <a href="Complaint.aspx" class="hero-btn orange">
-                <i class="bi bi-exclamation-circle"></i>
-                <br />
-                गुनासो दर्ता
-                <br />
-                <small>Register Complaint</small>
-            </a>
-            <a href="#" class="hero-btn blue">
-                <i class="bi bi-search"></i>
-                <br />
-                आवेदन बेनी
-                <br />
-                <small>Track Application</small>
-            </a>
-        </div>
-    </section>
-   <!-- HERO -->--%>
+  
 <div class="position-relative">
 
     <!-- Image -->

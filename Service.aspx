@@ -224,7 +224,7 @@
         <p class="service-desc">
             Apply for citizenship certificate online.
         </p>
-        <a href="<%= ResolveUrl("~/citizenship.aspx") %>" class="btn-start">Apply Now</a>
+        <a href="<%= ResolveUrl("~/CitizenshipRegistration/Citizenship.aspx") %>" class="btn-start">Apply Now</a>
     </div>
 
   <%--  <!-- Driver's License -->
