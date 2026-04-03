@@ -197,7 +197,7 @@
         <p class="service-desc">
             Register birth certificate online with official verification.
         </p>
-        <a href="<%= ResolveUrl("~/birth.aspx") %>" class="btn-start">Apply Now</a>
+        <a href="<%= ResolveUrl("~/birthregistration/birthregistration.aspx") %>" class="btn-start">Apply Now</a>
     </div>
 
     <!-- Death Registration -->
@@ -215,7 +215,7 @@
         <p class="service-desc">
             Apply for migration certificate for residential record transfer.
         </p>
-        <a href="#" class="btn-start">Apply Now</a>
+        <a href="<%= ResolveUrl("~/Migrationregistration/Migration.aspx") %>" class="btn-start">Apply Now</a>
     </div>
 
     <!-- Citizenship -->
@@ -224,7 +224,7 @@
         <p class="service-desc">
             Apply for citizenship certificate online.
         </p>
-        <a href="<%= ResolveUrl("~/citizenship.aspx") %>" class="btn-start">Apply Now</a>
+        <a href="<%= ResolveUrl("~/Citizenshipregistration/Citizenship.aspx") %>" class="btn-start">Apply Now</a>
     </div>
 
   <%--  <!-- Driver's License -->
@@ -235,6 +235,14 @@
         </p>
         <a href="https://applydlnew.dotm.gov.np/" target="_blank" class="btn-start">Get Started</a>
     </div>--%>
+
+        <div class="service-card">
+     <h3 class="service-title">Apply for Marriage Certificate</h3>
+     <p class="service-desc">
+         Register your marriage legally and apply for an official certificate.
+     </p>
+     <a href="<%= ResolveUrl("~/Marriageregistration/Marriage.aspx") %>" class="btn-start">Apply Now</a>
+ </div>
 
     <!-- Property Tax -->
     <div class="service-card">

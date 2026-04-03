@@ -7,83 +7,74 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HamroWard.Deathregistration
+namespace HamroWard.Migrationregistration
 {
 
 
-    public partial class RequestCopy
+    public partial class Migration
     {
 
         /// <summary>
-        /// form1 control.
+        /// BtnMigrate1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Button BtnMigrate1;
 
         /// <summary>
-        /// txtRegNum control.
+        /// BtnMigrate2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRegNum;
+        protected global::System.Web.UI.WebControls.Button BtnMigrate2;
 
         /// <summary>
-        /// BtnVerify control.
+        /// BtnMigrate3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnVerify;
+        protected global::System.Web.UI.WebControls.Button BtnMigrate3;
 
         /// <summary>
-        /// lblRecordStatus control.
+        /// BtnMigrate4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRecordStatus;
+        protected global::System.Web.UI.WebControls.Button BtnMigrate4;
 
         /// <summary>
-        /// rblReason control.
+        /// txtMigApplicationNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rblReason;
+        protected global::System.Web.UI.WebControls.TextBox txtMigApplicationNumber;
 
         /// <summary>
-        /// txtRemarks control.
+        /// txtFamilyHeadCitizenship control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRemarks;
+        protected global::System.Web.UI.WebControls.TextBox txtFamilyHeadCitizenship;
 
         /// <summary>
-        /// fileApplicantId control.
+        /// BtnMigSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fileApplicantId;
-
-        /// <summary>
-        /// BtnSubmitRequest control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSubmitRequest;
+        protected global::System.Web.UI.WebControls.Button BtnMigSearch;
     }
 }

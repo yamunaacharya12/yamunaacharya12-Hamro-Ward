@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="Birth.aspx.cs" Inherits="xyz.Birth1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="birthregistration.aspx.cs" Inherits="xyz.Birth1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 <!-- Top Bar -->
@@ -44,6 +44,7 @@
     <div class="mx-auto" style="width:64px; height:4px; background-color:#dc3545;"></div>
 </div>
 
+<%--<<<<<<< HEAD:Birthregistration/Birth.aspx--%>
 <%--<!-- Dipesh Mantri Section -->
 <section style="background: linear-gradient(to right, #fef2f2, #ffffff, #eff6ff);" class="py-5">
     <div class="container">
@@ -82,6 +83,8 @@
     </div>
 </section>--%>
 
+<%--=======
+>>>>>>> 036a45082dacdd4b69ec7587eea162ada30be704:Birth.aspx--%>
 <!-- Services Section -->
 <section class="min-vh-100 bg-light py-5">
     <div class="container">
@@ -198,5 +201,8 @@
         </div>
     </div>
 </div>
+
+     
+    <!-- testing the git -->
 
 </asp:Content>

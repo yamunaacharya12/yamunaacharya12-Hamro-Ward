@@ -7,83 +7,101 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HamroWard.Deathregistration
+namespace HamroWard.Migrationregistration
 {
 
 
-    public partial class EditRecord
+    public partial class AmendmentMigrationCertificate
     {
 
         /// <summary>
-        /// form1 control.
+        /// amendmentForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm amendmentForm;
 
         /// <summary>
-        /// txtSearchCert control.
+        /// MigrationCertNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearchCert;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText MigrationCertNo;
 
         /// <summary>
-        /// BtnVerify control.
+        /// AmendmentReason control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnVerify;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect AmendmentReason;
 
         /// <summary>
-        /// ddlField control.
+        /// CurrentFullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlField;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText CurrentFullName;
 
         /// <summary>
-        /// txtReason control.
+        /// CurrentAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtReason;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText CurrentAddress;
 
         /// <summary>
-        /// txtCorrectValue control.
+        /// CorrectFullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCorrectValue;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText CorrectFullName;
 
         /// <summary>
-        /// fileEvidence control.
+        /// CorrectAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fileEvidence;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText CorrectAddress;
 
         /// <summary>
-        /// BtnUpdate control.
+        /// SupportDoc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnUpdate;
+        protected global::System.Web.UI.WebControls.FileUpload SupportDoc;
+
+        /// <summary>
+        /// photoInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload photoInput;
+
+        /// <summary>
+        /// btnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
     }
 }

@@ -98,12 +98,12 @@
 
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="default.aspx">गृह/Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/default.aspx">गृह/Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="/Service.aspx">सेवाहरु/Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Complaint.aspx">गुनासो/Complaints</a></li>
-                        <li class="nav-item"><a class="nav-link" href="NewsNotices.aspx">सूचना/Information</a></li>
-                        <li class="nav-item"><a class="btn btn-outline-primary ms-2" href="signup.aspx">Sign Up</a></li>
-                        <li class="nav-item"><a class="btn btn-primary ms-2" href="login.aspx">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/Complaint.aspx">गुनासो/Complaints</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/NewsNotices.aspx">सूचना/Information</a></li>
+                        <li class="nav-item"><a class="btn btn-outline-primary ms-2" href="/signup.aspx">Sign Up</a></li>
+                        <li class="nav-item"><a class="btn btn-primary ms-2" href="/login.aspx">Login</a></li>
                     </ul>
                 </div>
             </div>

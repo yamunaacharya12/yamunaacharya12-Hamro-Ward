@@ -7,93 +7,102 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HamroWard
+namespace xyz.Birthregistration
 {
 
 
-    public partial class Citizenship
+    public partial class AmendmentBirthRegistration
     {
 
-        /// <summary>https://localhost:44337/Citizenship.aspx.designer.cs
-        /// txtNameNep control.
+        /// <summary>
+        /// amendmentForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNameNep;
+        protected global::System.Web.UI.HtmlControls.HtmlForm amendmentForm;
 
         /// <summary>
-        /// txtNameEng control.
+        /// BirthRegNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNameEng;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText BirthRegNo;
 
         /// <summary>
-        /// txtDOB control.
+        /// CorrectionReason control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDOB;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect CorrectionReason;
 
         /// <summary>
-        /// ddlGender control.
+        /// CurrentFullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlGender;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText CurrentFullName;
 
         /// <summary>
-        /// ddlDistrict control.
+        /// CurrentDOB_BS control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDistrict;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText CurrentDOB_BS;
 
         /// <summary>
-        /// txtTole control.
+        /// CorrectFullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTole;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText CorrectFullName;
 
         /// <summary>
-        /// filePhoto control.
+        /// CorrectDOB_BS control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload filePhoto;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText CorrectDOB_BS;
 
         /// <summary>
-        /// fileBirth control.
+        /// CorrectGender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fileBirth;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect CorrectGender;
 
         /// <summary>
-        /// btnDraft control.
+        /// SupportDoc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDraft;
+        protected global::System.Web.UI.WebControls.FileUpload SupportDoc;
+
+        /// <summary>
+        /// photoInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload photoInput;
 
         /// <summary>
         /// btnSubmit control.

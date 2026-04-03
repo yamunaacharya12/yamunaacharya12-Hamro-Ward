@@ -7,119 +7,92 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace xyz.Deathregistration
+namespace HamroWard.Migrationregistration
 {
 
 
-    public partial class ApplyNew
+    public partial class MigrationRegistrationCopy
     {
 
         /// <summary>
-        /// form1 control.
+        /// FullName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText FullName;
 
         /// <summary>
-        /// txtNameEng control.
+        /// CitizenshipNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNameEng;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText CitizenshipNo;
 
         /// <summary>
-        /// txtNameNep control.
+        /// MigrationCertNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNameNep;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText MigrationCertNo;
 
         /// <summary>
-        /// ddlGender control.
+        /// Phone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlGender;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Phone;
 
         /// <summary>
-        /// txtDate control.
+        /// FromAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDate;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText FromAddress;
 
         /// <summary>
-        /// txtCitizenship control.
+        /// ToAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCitizenship;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText ToAddress;
 
         /// <summary>
-        /// txtDistrict control.
+        /// CopyReason control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDistrict;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect CopyReason;
 
         /// <summary>
-        /// txtMunicipality control.
+        /// DocumentUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMunicipality;
+        protected global::System.Web.UI.WebControls.FileUpload DocumentUpload;
 
         /// <summary>
-        /// txtWard control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtWard;
-
-        /// <summary>
-        /// fileDeathDoc control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fileDeathDoc;
-
-        /// <summary>
-        /// fileApplicantId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fileApplicantId;
-
-        /// <summary>
-        /// BtnSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSubmit;
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
     }
 }

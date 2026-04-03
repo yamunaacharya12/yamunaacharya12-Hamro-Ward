@@ -1,8 +1,7 @@
-﻿<%@ Page Title="Death Registration" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="deathregistration.aspx.cs" Inherits="xyz.Death1" %>
+<%@ Page Title="Citizenship Registration" Language="C#" MasterPageFile="~/home.Master"
+    AutoEventWireup="true" CodeBehind="Citizenship.aspx.cs" Inherits="HamroWard.CitizenshipRegistration.Citizenship" ResponseEncoding="utf-8" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap');
@@ -180,15 +179,34 @@
         background: #fefce8;
         color: #92400e;
     }
+
+    /* ── Notice banner ── */
+    .notice-banner {
+        max-width: 860px;
+        margin: 0 auto 40px;
+        padding: 0 16px;
+    }
+    .notice-inner {
+        background: #fefce8;
+        border: 2px solid #facc15;
+        border-radius: 16px;
+        padding: 16px 24px;
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        font-size: 0.87rem;
+        color: #713f12;
+    }
+    .notice-inner i { color: #ca8a04; font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
 </style>
 
 <div class="flag-bar"></div>
 
 <div class="page-hero">
     <div class="hero-inner">
-        <div class="hero-emblem">🕊️</div>
+        <div class="hero-emblem">🪪</div>
         <div class="hero-text">
-            <h1>Death Registration &nbsp;/&nbsp; मृत्यु दर्ता</h1>
+            <h1>Citizenship Registration &nbsp;/&nbsp; नागरिकता दर्ता</h1>
             <p>Ward Office — Digital Services Portal &nbsp;|&nbsp; वडा कार्यालय — डिजिटल सेवा</p>
         </div>
     </div>
@@ -199,46 +217,55 @@
     <nav class="breadcrumb-wrap">
         <a href="~/Default.aspx" runat="server">गृहपृष्ठ (Home)</a> &rsaquo;
         <a href="/Service.aspx" runat="server">पञ्जीकरण (Vital Registration)</a> &rsaquo;
-        <span>मृत्यु दर्ता (Death Registration)</span>
+        <span>नागरिकता दर्ता (Citizenship Registration)</span>
     </nav>
 
     <div class="section-intro">
-        <h2>Select a Death Registration Service &nbsp;/&nbsp; मृत्यु दर्ता सेवा छान्नुहोस्</h2>
+        <h2>Select a Citizenship Service &nbsp;/&nbsp; नागरिकता सेवा छान्नुहोस्</h2>
     </div>
 
 
     <div class="service-grid">
 
-        <a href="~/DeathRegistration/DeathNew.aspx" runat="server" class="service-card">
-            <div class="service-icon">📝</div>
+        <a href="~/CitizenshipRegistration/CitizenshipNew.aspx" runat="server" class="service-card">
+            <div class="service-icon">📋</div>
             <div>
-                <p class="service-title">Register New Death</p>
-                <p class="service-title-nep">नयाँ मृत्यु दर्ता गर्नुहोस्</p>
+                <p class="service-title">Issue New Citizenship</p>
+                <p class="service-title-nep">नयाँ नागरिकता जारी गर्नुहोस्</p>
             </div>
             <span class="service-badge">नयाँ आवेदन (New Application)</span>
         </a>
 
-        <a href="~/DeathRegistration/DeathStatus.aspx" runat="server" class="service-card">
+        <a href="~/CitizenshipRegistration/CitizenshipStatus.aspx" runat="server" class="service-card">
             <div class="service-icon">🔍</div>
-            
+           
             <div>
                 <p class="service-title">Check Application Status</p>
                 <p class="service-title-nep">आवेदन स्थिति जाँच्नुहोस्</p>
             </div>
-                
+               
             <span class="service-badge badge-info">स्थिति ट्र्याक गर्नुहोस् (Track Status)</span>
         </a>
 
-        <a href="~/DeathRegistration/DeathCertificate.aspx" runat="server" class="service-card">
-            <div class="service-icon">📜</div>
+        <a href="~/CitizenshipRegistration/CitizenshipCopy.aspx" runat="server" class="service-card">
+            <div class="service-icon">📄</div>
             <div>
-                <p class="service-title">Get Death Certificate</p>
-                <p class="service-title-nep">मृत्यु प्रमाणपत्र लिनुहोस्</p>
+                <p class="service-title">Get Certified Copy</p>
+                <p class="service-title-nep">प्रमाणित प्रतिलिपि लिनुहोस्</p>
             </div>
-            <span class="service-badge">प्रमाणपत्र अनुरोध (Certificate Request)</span>
+            <span class="service-badge">प्रतिलिपि अनुरोध (Copy Request)</span>
         </a>
 
-        <a href="~/DeathRegistration/DeathCorrection.aspx" runat="server" class="service-card">
+        <a href="~/CitizenshipRegistration/CitizenshipRenew.aspx" runat="server" class="service-card">
+            <div class="service-icon">🔄</div>
+            <div>
+                <p class="service-title">Renew / Replace Lost Card</p>
+                <p class="service-title-nep">नवीकरण / हराएको नागरिकता</p>
+            </div>
+            <span class="service-badge badge-warning">प्रतिस्थापन (Replacement)</span>
+        </a>
+
+        <a href="~/CitizenshipRegistration/CitizenshipCorrection.aspx" runat="server" class="service-card">
             <div class="service-icon">✏️</div>
             <div>
                 <p class="service-title">Correction of Details</p>
@@ -247,13 +274,13 @@
             <span class="service-badge badge-info">सच्याउने (Correction)</span>
         </a>
 
-        <a href="~/DeathRegistration/DeathVerification.aspx" runat="server" class="service-card">
-            <div class="service-icon">✅</div>
+        <a href="~/CitizenshipRegistration/CitizenshipTransfer.aspx" runat="server" class="service-card">
+            <div class="service-icon">🏘️</div>
             <div>
-                <p class="service-title">Death Verification</p>
-                <p class="service-title-nep">मृत्यु प्रमाणितकरण</p>
+                <p class="service-title">Transfer (Migration)</p>
+                <p class="service-title-nep">बसाइसराइ स्थानान्तरण</p>
             </div>
-            <span class="service-badge badge-warning">प्रमाणितकरण (Verification)</span>
+            <span class="service-badge badge-warning">स्थानान्तरण (Transfer)</span>
         </a>
 
     </div>
