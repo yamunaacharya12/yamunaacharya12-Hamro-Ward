@@ -182,14 +182,14 @@
 
     <div class="popular-grid">
 
-   <%-- <!-- Passport -->
+ <!-- Passport -->
     <div class="service-card">
         <h3 class="service-title">Apply for Passport</h3>
         <p class="service-desc">
             Submit your passport application online with digital document upload and tracking.
         </p>
          <a href="<%= ResolveUrl("~/passport.aspx") %>" class="btn-start">Get Started</a>
-    </div>--%>
+    </div>
 
     <!-- Apply for Birth Certificate -->
     <div class="service-card">
@@ -197,7 +197,7 @@
         <p class="service-desc">
             Register birth certificate online with official verification.
         </p>
-        <a href="<%= ResolveUrl("~/birth.aspx") %>" class="btn-start">Apply Now</a>
+        <a href="<%= ResolveUrl("/BirthRegistration/Birth.aspx") %>" class="btn-start">Apply Now</a>
     </div>
 
     <!-- Death Registration -->

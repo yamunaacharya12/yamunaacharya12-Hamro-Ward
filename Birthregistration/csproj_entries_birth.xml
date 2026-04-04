@@ -1,0 +1,81 @@
+<!-- ============================================================
+     ADD THESE TO YOUR .csproj FILE
+     Content entries go with other <Content> tags
+     Compile entries go with other <Compile> tags
+     BirthConfirmation files go in ROOT (not in Birthregistration folder)
+     ============================================================ -->
+
+<!-- CONTENT ENTRIES -->
+<Content Include="Birthregistration\Birth.aspx" />
+<Content Include="Birthregistration\BirthNew.aspx" />
+<Content Include="Birthregistration\BirthStatus.aspx" />
+<Content Include="Birthregistration\BirthCopy.aspx" />
+<Content Include="Birthregistration\BirthCorrection.aspx" />
+<Content Include="Birthregistration\BirthLate.aspx" />
+<Content Include="Birthregistration\BirthTransfer.aspx" />
+<Content Include="BirthConfirmation.aspx" />
+
+<!-- COMPILE ENTRIES -->
+<Compile Include="Birthregistration\Birth.aspx.cs">
+  <DependentUpon>Birth.aspx</DependentUpon>
+  <SubType>ASPXCodeBehind</SubType>
+</Compile>
+<Compile Include="Birthregistration\Birth.aspx.designer.cs">
+  <DependentUpon>Birth.aspx</DependentUpon>
+</Compile>
+
+<Compile Include="Birthregistration\BirthNew.aspx.cs">
+  <DependentUpon>BirthNew.aspx</DependentUpon>
+  <SubType>ASPXCodeBehind</SubType>
+</Compile>
+<Compile Include="Birthregistration\BirthNew.aspx.designer.cs">
+  <DependentUpon>BirthNew.aspx</DependentUpon>
+</Compile>
+
+<Compile Include="Birthregistration\BirthStatus.aspx.cs">
+  <DependentUpon>BirthStatus.aspx</DependentUpon>
+  <SubType>ASPXCodeBehind</SubType>
+</Compile>
+<Compile Include="Birthregistration\BirthStatus.aspx.designer.cs">
+  <DependentUpon>BirthStatus.aspx</DependentUpon>
+</Compile>
+
+<Compile Include="Birthregistration\BirthCopy.aspx.cs">
+  <DependentUpon>BirthCopy.aspx</DependentUpon>
+  <SubType>ASPXCodeBehind</SubType>
+</Compile>
+<Compile Include="Birthregistration\BirthCopy.aspx.designer.cs">
+  <DependentUpon>BirthCopy.aspx</DependentUpon>
+</Compile>
+
+<Compile Include="Birthregistration\BirthCorrection.aspx.cs">
+  <DependentUpon>BirthCorrection.aspx</DependentUpon>
+  <SubType>ASPXCodeBehind</SubType>
+</Compile>
+<Compile Include="Birthregistration\BirthCorrection.aspx.designer.cs">
+  <DependentUpon>BirthCorrection.aspx</DependentUpon>
+</Compile>
+
+<Compile Include="Birthregistration\BirthLate.aspx.cs">
+  <DependentUpon>BirthLate.aspx</DependentUpon>
+  <SubType>ASPXCodeBehind</SubType>
+</Compile>
+<Compile Include="Birthregistration\BirthLate.aspx.designer.cs">
+  <DependentUpon>BirthLate.aspx</DependentUpon>
+</Compile>
+
+<Compile Include="Birthregistration\BirthTransfer.aspx.cs">
+  <DependentUpon>BirthTransfer.aspx</DependentUpon>
+  <SubType>ASPXCodeBehind</SubType>
+</Compile>
+<Compile Include="Birthregistration\BirthTransfer.aspx.designer.cs">
+  <DependentUpon>BirthTransfer.aspx</DependentUpon>
+</Compile>
+
+<Compile Include="BirthConfirmation.aspx.cs">
+  <DependentUpon>BirthConfirmation.aspx</DependentUpon>
+  <SubType>ASPXCodeBehind</SubType>
+</Compile>
+<Compile Include="BirthConfirmation.aspx.designer.cs">
+  <DependentUpon>BirthConfirmation.aspx</DependentUpon>
+</Compile>

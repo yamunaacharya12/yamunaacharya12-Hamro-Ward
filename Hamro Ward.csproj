@@ -43,9 +43,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Birthregistration\ApplyNew.aspx" />
-    <Content Include="Birthregistration\Birth.aspx" />
+    <Content Include="BirthConfirmation.aspx" />
     <Content Include="BirthForm.aspx" />
+    <Content Include="BirthRegistration\Birth.aspx" />
+    <Content Include="BirthRegistration\BirthCopy.aspx" />
+    <Content Include="BirthRegistration\BirthCorrection.aspx" />
+    <Content Include="BirthRegistration\BirthLate.aspx" />
+    <Content Include="BirthRegistration\BirthNew.aspx" />
+    <Content Include="BirthRegistration\BirthStatus.aspx" />
+    <Content Include="BirthRegistration\BirthTransfer.aspx" />
+    <Content Include="BirthRegistration\CreateBirthTable.sql" />
+    <Content Include="BirthRegistration\csproj_entries_birth.xml" />
     <Content Include="CitizenshipConfirmation.aspx" />
     <Content Include="CitizenshipRegistration\Citizenship.aspx" />
     <Content Include="CitizenshipRegistration\CitizenshipCopy.aspx" />
@@ -77,19 +85,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Birthregistration\ApplyNew.aspx.cs">
-      <DependentUpon>ApplyNew.aspx</DependentUpon>
+    <Compile Include="BirthConfirmation.aspx.cs">
+      <DependentUpon>BirthConfirmation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Birthregistration\ApplyNew.aspx.designer.cs">
-      <DependentUpon>ApplyNew.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Birthregistration\Birth.aspx.cs">
-      <DependentUpon>Birth.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Birthregistration\Birth.aspx.designer.cs">
-      <DependentUpon>Birth.aspx</DependentUpon>
+    <Compile Include="BirthConfirmation.aspx.designer.cs">
+      <DependentUpon>BirthConfirmation.aspx</DependentUpon>
     </Compile>
     <Compile Include="BirthForm.aspx.cs">
       <DependentUpon>BirthForm.aspx</DependentUpon>
@@ -97,6 +98,55 @@
     </Compile>
     <Compile Include="BirthForm.aspx.designer.cs">
       <DependentUpon>BirthForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\Birth.aspx.cs">
+      <DependentUpon>Birth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\Birth.aspx.designer.cs">
+      <DependentUpon>Birth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthCopy.aspx.cs">
+      <DependentUpon>BirthCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthCopy.aspx.designer.cs">
+      <DependentUpon>BirthCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthCorrection.aspx.cs">
+      <DependentUpon>BirthCorrection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthCorrection.aspx.designer.cs">
+      <DependentUpon>BirthCorrection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthLate.aspx.cs">
+      <DependentUpon>BirthLate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthLate.aspx.designer.cs">
+      <DependentUpon>BirthLate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthNew.aspx.cs">
+      <DependentUpon>BirthNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthNew.aspx.designer.cs">
+      <DependentUpon>BirthNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthStatus.aspx.cs">
+      <DependentUpon>BirthStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthStatus.aspx.designer.cs">
+      <DependentUpon>BirthStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthTransfer.aspx.cs">
+      <DependentUpon>BirthTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthTransfer.aspx.designer.cs">
+      <DependentUpon>BirthTransfer.aspx</DependentUpon>
     </Compile>
     <Compile Include="CitizenshipConfirmation.aspx.cs">
       <DependentUpon>CitizenshipConfirmation.aspx</DependentUpon>
@@ -266,20 +316,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Birthregistration\ApplyNew.aspx.cs">
-      <DependentUpon>ApplyNew.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Birthregistration\ApplyNew.aspx.designer.cs">
-      <DependentUpon>ApplyNew.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Birthregistration\Birth.aspx.cs">
-      <DependentUpon>Birth.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Birthregistration\Birth.aspx.designer.cs">
-      <DependentUpon>Birth.aspx</DependentUpon>
-    </Compile>
     <Compile Include="BirthForm.aspx.cs">
       <DependentUpon>BirthForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
