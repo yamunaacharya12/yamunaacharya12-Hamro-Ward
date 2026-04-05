@@ -60,6 +60,15 @@ namespace HamroWard
         protected global::System.Web.UI.WebControls.TextBox txtWardNumber;
 
         /// <summary>
+        /// txtPhone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPhone;
+
+        /// <summary>
         /// txtSubject control.
         /// </summary>
         /// <remarks>
@@ -78,6 +87,15 @@ namespace HamroWard
         protected global::System.Web.UI.WebControls.TextBox txtDescription;
 
         /// <summary>
+        /// txtLocation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLocation;
+
+        /// <summary>
         /// fuPhoto control.
         /// </summary>
         /// <remarks>
@@ -85,5 +103,14 @@ namespace HamroWard
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload fuPhoto;
+
+        /// <summary>
+        /// btnSubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
     }
 }

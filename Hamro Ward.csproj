@@ -70,13 +70,13 @@
     <Content Include="Deathregistration\EditRecord.aspx" />
     <Content Include="Deathregistration\RequestCopy.aspx" />
     <Content Include="default.aspx" />
-    <Content Include="Info.aspx" />
-    <Content Include="NewsNotices.aspx" />
     <Content Include="login.aspx" />
     <Content Include="members.aspx" />
+    <Content Include="NewsNotices\NewsNotices.aspx" />
     <Content Include="Passport.aspx" />
     <Content Include="Service.aspx" />
     <Content Include="Signup.aspx" />
+    <Content Include="slider\rho.jpeg" />
     <Content Include="slider\service.jpeg" />
     <Content Include="slider\sl1.jpg" />
     <Content Include="slider\sl2.jpg" />
@@ -267,17 +267,6 @@
     <Compile Include="home.Master.designer.cs">
       <DependentUpon>home.Master</DependentUpon>
     </Compile>
-    <Compile Include="Info.aspx.cs">
-      <DependentUpon>Info.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Info.aspx.designer.cs">
-      <DependentUpon>Info.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NewsNotices.aspx.cs">
-      <DependentUpon>NewsNotices.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -291,6 +280,13 @@
     </Compile>
     <Compile Include="members.aspx.designer.cs">
       <DependentUpon>members.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsNotices\NewsNotices.aspx.cs">
+      <DependentUpon>NewsNotices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsNotices\NewsNotices.aspx.designer.cs">
+      <DependentUpon>NewsNotices.aspx</DependentUpon>
     </Compile>
     <Compile Include="Passport.aspx.cs">
       <DependentUpon>Passport.aspx</DependentUpon>
@@ -393,17 +389,6 @@
     </Compile>
     <Compile Include="home.Master.designer.cs">
       <DependentUpon>home.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Info.aspx.cs">
-      <DependentUpon>Info.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Info.aspx.designer.cs">
-      <DependentUpon>Info.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NewsNotices.aspx.cs">
-      <DependentUpon>NewsNotices.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>

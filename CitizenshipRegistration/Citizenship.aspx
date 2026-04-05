@@ -18,7 +18,7 @@
         background: linear-gradient(160deg, #f1f5f9 0%, #e0e7ff 100%);
         color: #1e2937;
         line-height: 1.6;
-        margin-top: 50px;
+        
     }
 
     /* ── Page Hero ── */
@@ -200,7 +200,7 @@
     .notice-inner i { color: #ca8a04; font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
 </style>
 
-<div class="flag-bar"></div>
+
 
 <!-- Hero -->
 <div class="page-hero">

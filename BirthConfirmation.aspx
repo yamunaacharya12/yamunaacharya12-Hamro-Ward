@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <style>
     :root{--crimson:#DC143C;--navy:#002B7F;--crimson-light:rgba(220,20,60,0.08);--navy-light:rgba(0,43,127,0.07);}
-    body{font-family:'Inter',system-ui,sans-serif;background:linear-gradient(160deg,#f1f5f9 0%,#e0e7ff 100%);margin-top:50px;}
+    body{font-family:'Inter',system-ui,sans-serif;background:linear-gradient(160deg,#f1f5f9 0%,#e0e7ff 100%);}
     .flag-bar{height:10px;background:repeating-linear-gradient(90deg,var(--crimson) 0,var(--crimson) 24px,var(--navy) 24px,var(--navy) 48px);}
     .confirmation-wrapper{max-width:620px;margin:60px auto 80px;padding:0 16px;text-align:center;}
     .success-icon{width:90px;height:90px;background:linear-gradient(135deg,#22c55e,#16a34a);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:48px;margin:0 auto 24px;box-shadow:0 12px 30px rgba(34,197,94,0.35);}
