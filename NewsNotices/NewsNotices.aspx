@@ -146,11 +146,7 @@
 
     .notice-card:hover::after { transform: scaleX(1); }
 
-    .notice-type-bar {
-        height: 5px;
-        width: 100%;
-    }
-
+    .notice-type-bar { height: 5px; width: 100%; }
     .type-news   { background: linear-gradient(90deg, var(--crimson), #f43f5e); }
     .type-notice { background: linear-gradient(90deg, var(--navy), #3b82f6); }
     .type-event  { background: linear-gradient(90deg, #10b981, #059669); }
@@ -219,10 +215,10 @@
         cursor: pointer;
         padding: 0;
         font-family: 'Inter', system-ui, sans-serif;
-        transition: gap 0.2s;
         display: flex;
         align-items: center;
         gap: 4px;
+        transition: gap 0.2s;
     }
 
     .btn-read-more:hover { gap: 8px; }
@@ -233,13 +229,9 @@
         padding: 60px 20px;
         color: #9ca3af;
     }
+    .empty-state .empty-icon { font-size: 48px; margin-bottom: 16px; }
 
-    .empty-state .empty-icon {
-        font-size: 48px;
-        margin-bottom: 16px;
-    }
-
-    /* ── View All button ── */
+    /* ── View All Button ── */
     .btn-view-all {
         background: linear-gradient(135deg, var(--crimson), var(--navy));
         color: white;
@@ -272,10 +264,7 @@
         color: #6b7280;
         margin-bottom: 24px;
     }
-    .breadcrumb-wrap a {
-        color: var(--crimson);
-        text-decoration: none;
-    }
+    .breadcrumb-wrap a { color: var(--crimson); text-decoration: none; }
     .breadcrumb-wrap a:hover { text-decoration: underline; }
 </style>
 
@@ -304,17 +293,17 @@
     <!-- Filter Bar -->
     <div class="filter-bar">
         <span class="filter-label">Filter:</span>
-        <button class="filter-btn active" onclick="filterCards('All', this)">All / सबै</button>
-        <button class="filter-btn" onclick="filterCards('News', this)">News / समाचार</button>
-        <button class="filter-btn" onclick="filterCards('Notice', this)">Notice / सूचना</button>
-        <button class="filter-btn" onclick="filterCards('Event', this)">Event / कार्यक्रम</button>
+        <button type="button" class="filter-btn active" onclick="filterCards('All', this)">All / सबै</button>
+        <button type="button" class="filter-btn" onclick="filterCards('News', this)">News / समाचार</button>
+        <button type="button" class="filter-btn" onclick="filterCards('Notice', this)">Notice / सूचना</button>
+        <button type="button" class="filter-btn" onclick="filterCards('Event', this)">Event / कार्यक्रम</button>
     </div>
 
     <!-- Cards Grid -->
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" id="noticesGrid">
         <asp:Repeater ID="rptNotices" runat="server" OnItemDataBound="rptNotices_ItemDataBound">
             <ItemTemplate>
-                <div class="col notice-col" data-type='<%# Eval("Category") %>'>
+                <div class="col notice-col" data-type="<%# Server.HtmlEncode(Eval("Category").ToString().Trim()) %>">
                     <div class="notice-card">
                         <div class="notice-type-bar <%# GetTypeBarClass(Eval("Category").ToString()) %>"></div>
                         <div class="notice-content">
@@ -330,8 +319,7 @@
                             <p class="notice-description"><%# Eval("ShortDescription") %></p>
                         </div>
                         <div class="notice-footer">
-                            <button class="btn-read-more"
-                                onclick="openDetail(<%# Eval("Id") %>)">
+                            <button type="button" class="btn-read-more" onclick="openDetail(<%# Eval("Id") %>)">
                                 Read More →
                             </button>
                         </div>
@@ -341,7 +329,7 @@
         </asp:Repeater>
     </div>
 
-    <!-- Empty state (shown when no records) -->
+    <!-- Empty state -->
     <asp:Panel ID="pnlEmpty" runat="server" Visible="false">
         <div class="empty-state">
             <div class="empty-icon">📭</div>
@@ -352,8 +340,8 @@
 
     <!-- View All / View Less -->
     <asp:Panel ID="pnlViewToggle" runat="server" Visible="false">
-        <div class="text-center mt-5">
-            <button class="btn-view-all" id="btnViewToggle" onclick="toggleView()">
+        <div class="text-center mt-5" id="viewToggleWrap">
+            <button type="button" class="btn-view-all" id="btnViewToggle" onclick="toggleView()">
                 सबै हेर्नुहोस् / View All
             </button>
         </div>
@@ -362,48 +350,84 @@
 </div>
 
 <script>
-    // ── Filter by category ──
-    function filterCards(type, btn) {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        document.querySelectorAll('.notice-col').forEach(function (col) {
-            var colType = col.getAttribute('data-type');
-            col.style.display = (type === 'All' || colType === type) ? '' : 'none';
-        });
-    }
-
-    // ── View All / View Less toggle ──
-    var expanded = false;
     var INITIAL_SHOW = 6;
+    var expanded = false;
 
+    // ── On page load: hide cards beyond INITIAL_SHOW ──
     function initCards() {
         var cols = document.querySelectorAll('.notice-col');
-        if (cols.length <= INITIAL_SHOW) {
-            var toggle = document.getElementById('btnViewToggle');
-            if (toggle) toggle.parentElement.style.display = 'none';
-            return;
-        }
+
         cols.forEach(function (col, i) {
+            col.dataset.pageHidden = (i >= INITIAL_SHOW) ? '1' : '0';
             if (i >= INITIAL_SHOW) col.style.display = 'none';
         });
+
+        var wrap = document.getElementById('viewToggleWrap');
+        if (wrap && cols.length <= INITIAL_SHOW) {
+            wrap.style.display = 'none';
+        }
     }
 
-    function toggleView() {
-        expanded = !expanded;
-        var cols = document.querySelectorAll('.notice-col');
-        var btn  = document.getElementById('btnViewToggle');
+    // ── Filter by category ──
+    function filterCards(type, btn) {
+        document.querySelectorAll('.filter-btn').forEach(function (b) {
+            b.classList.remove('active');
+        });
+        btn.classList.add('active');
 
-        cols.forEach(function (col, i) {
-            if (i >= INITIAL_SHOW) col.style.display = expanded ? '' : 'none';
+        expanded = false;
+        var toggleBtn = document.getElementById('btnViewToggle');
+        if (toggleBtn) toggleBtn.textContent = 'सबै हेर्नुहोस् / View All';
+
+        var matchedCount = 0;
+        var visibleCount = 0;
+
+        document.querySelectorAll('.notice-col').forEach(function (col) {
+            var colType = (col.getAttribute('data-type') || '').trim();
+            var matches = (type === 'All') ||
+                (colType.toLowerCase() === type.toLowerCase());
+
+            if (matches) {
+                matchedCount++;
+                visibleCount++;
+                if (visibleCount <= INITIAL_SHOW) {
+                    col.style.display = '';
+                    col.dataset.pageHidden = '0';
+                } else {
+                    col.style.display = 'none';
+                    col.dataset.pageHidden = '1';
+                }
+            } else {
+                col.style.display = 'none';
+                col.dataset.pageHidden = '0';
+            }
         });
 
-        btn.textContent = expanded
-            ? 'कम देखाउनुहोस् / View Less'
-            : 'सबै हेर्नुहोस् / View All';
+        var wrap = document.getElementById('viewToggleWrap');
+        if (wrap) {
+            wrap.style.display = (matchedCount > INITIAL_SHOW) ? '' : 'none';
+        }
     }
 
-    // ── Open detail (placeholder — extend as needed) ──
+    // ── View All / View Less ──
+    function toggleView() {
+        expanded = !expanded;
+        var btn = document.getElementById('btnViewToggle');
+
+        document.querySelectorAll('.notice-col').forEach(function (col) {
+            if (col.dataset.pageHidden === '1') {
+                col.style.display = expanded ? '' : 'none';
+            }
+        });
+
+        if (btn) {
+            btn.textContent = expanded
+                ? 'कम देखाउनुहोस् / View Less'
+                : 'सबै हेर्नुहोस् / View All';
+        }
+    }
+
+    // ── Navigate to detail page ──
     function openDetail(id) {
         window.location.href = '/NewsNoticeDetail.aspx?id=' + id;
     }
