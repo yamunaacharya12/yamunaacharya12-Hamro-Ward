@@ -65,26 +65,67 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Birthregistration\ApplyNew.aspx" />
-    <Content Include="Birthregistration\Birth.aspx" />
     <Content Include="Birth.aspx" />
     <Content Include="BirthForm.aspx" />
-    <Content Include="Citizenship.aspx" />
+    <Content Include="BirthRegistration\Birth.aspx" />
+    <Content Include="BirthRegistration\BirthConfirmation.aspx" />
+    <Content Include="BirthRegistration\BirthCopy.aspx" />
+    <Content Include="BirthRegistration\BirthCorrection.aspx" />
+    <Content Include="BirthRegistration\BirthLate.aspx" />
+    <Content Include="BirthRegistration\BirthNew.aspx" />
+    <Content Include="BirthRegistration\BirthStatus.aspx" />
+    <Content Include="BirthRegistration\BirthTransfer.aspx" />
+    <Content Include="BusinessRegistration\BusinessCalculator.aspx" />
+    <Content Include="BusinessRegistration\BusinessClosure.aspx" />
+    <Content Include="BusinessRegistration\BusinessDashboard.aspx" />
+    <Content Include="BusinessRegistration\BusinessGuidelines.aspx" />
+    <Content Include="BusinessRegistration\BusinessRegister.aspx" />
+    <Content Include="BusinessRegistration\BusinessRenewal.aspx" />
+    <Content Include="BusinessRegistration\BusinessStatus.aspx" />
+    <Content Include="CitizenshipRegistration\Citizenship.aspx" />
+    <Content Include="CitizenshipRegistration\CitizenshipCopy.aspx" />
+    <Content Include="CitizenshipRegistration\CitizenshipCorrection.aspx" />
+    <Content Include="CitizenshipRegistration\CitizenshipNew.aspx" />
+    <Content Include="CitizenshipRegistration\CitizenshipRenew.aspx" />
+    <Content Include="CitizenshipRegistration\CitizenshipStatus.aspx" />
+    <Content Include="CitizenshipRegistration\CitizenshipTransfer.aspx" />
     <Content Include="Complaint.aspx" />
     <Content Include="contact.aspx" />
-    <Content Include="Deathregistration\deathregistration.aspx" />
-    <Content Include="Deathregistration\ApplyNew.aspx" />
-    <Content Include="Deathregistration\CancelRecord.aspx" />
-    <Content Include="Deathregistration\EditRecord.aspx" />
-    <Content Include="Deathregistration\RequestCopy.aspx" />
+    <Content Include="DeathRegistration\Death.aspx" />
+    <Content Include="DeathRegistration\DeathCopy.aspx" />
+    <Content Include="DeathRegistration\DeathCorrection.aspx" />
+    <Content Include="DeathRegistration\DeathLate.aspx" />
+    <Content Include="DeathRegistration\DeathNew.aspx" />
+    <Content Include="DeathRegistration\DeathStatus.aspx" />
+    <Content Include="DeathRegistration\DeathTransfer.aspx" />
     <Content Include="default.aspx" />
-    <Content Include="Info.aspx" />
+    <Content Include="MigrationRegistration\Migration.aspx" />
+    <Content Include="MigrationRegistration\MigrationCertificate.aspx" />
+    <Content Include="MigrationRegistration\MigrationIn.aspx" />
+    <Content Include="MigrationRegistration\MigrationOut.aspx" />
+    <Content Include="MigrationRegistration\MigrationStatus.aspx" />
     <Content Include="NewsNotices.aspx" />
     <Content Include="login.aspx" />
     <Content Include="members.aspx" />
-    <Content Include="Passport.aspx" />
+    <Content Include="Passport\Passport.aspx" />
+    <Content Include="Passport\PassportAppointment.aspx" />
+    <Content Include="Passport\PassportChecklist.aspx" />
+    <Content Include="Passport\PassportGuidelines.aspx" />
+    <Content Include="Passport\PassportLost.aspx" />
+    <Content Include="Passport\PassportMinor.aspx" />
+    <Content Include="Passport\PassportNew.aspx" />
+    <Content Include="Passport\PassportRenewal.aspx" />
+    <Content Include="Passport\PassportStatus.aspx" />
+    <Content Include="PropertyTax\PropertyRegister.aspx" />
+    <Content Include="PropertyTax\PropertyTax.aspx" />
+    <Content Include="PropertyTax\TaxCalculator.aspx" />
+    <Content Include="PropertyTax\TaxClearance.aspx" />
+    <Content Include="PropertyTax\TaxDiscount.aspx" />
+    <Content Include="PropertyTax\TaxHistory.aspx" />
+    <Content Include="PropertyTax\TaxRates.aspx" />
     <Content Include="Service.aspx" />
-    <Content Include="Signup.aspx" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="slider\rho.jpeg" />
     <Content Include="slider\service.jpeg" />
     <Content Include="slider\sl1.jpg" />
     <Content Include="slider\sl2.jpg" />
@@ -93,20 +134,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Birthregistration\ApplyNew.aspx.cs">
-      <DependentUpon>ApplyNew.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Birthregistration\ApplyNew.aspx.designer.cs">
-      <DependentUpon>ApplyNew.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Birthregistration\Birth.aspx.cs">
-      <DependentUpon>Birth.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Birthregistration\Birth.aspx.designer.cs">
-      <DependentUpon>Birth.aspx</DependentUpon>
-    </Compile>
     <Compile Include="BirthForm.aspx.cs">
       <DependentUpon>BirthForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -114,12 +141,159 @@
     <Compile Include="BirthForm.aspx.designer.cs">
       <DependentUpon>BirthForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Citizenship.aspx.cs">
+    <Compile Include="BirthRegistration\Birth.aspx.cs">
+      <DependentUpon>Birth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\Birth.aspx.designer.cs">
+      <DependentUpon>Birth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthConfirmation.aspx.cs">
+      <DependentUpon>BirthConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthConfirmation.aspx.designer.cs">
+      <DependentUpon>BirthConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthCopy.aspx.cs">
+      <DependentUpon>BirthCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthCopy.aspx.designer.cs">
+      <DependentUpon>BirthCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthCorrection.aspx.cs">
+      <DependentUpon>BirthCorrection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthCorrection.aspx.designer.cs">
+      <DependentUpon>BirthCorrection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthLate.aspx.cs">
+      <DependentUpon>BirthLate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthLate.aspx.designer.cs">
+      <DependentUpon>BirthLate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthNew.aspx.cs">
+      <DependentUpon>BirthNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthNew.aspx.designer.cs">
+      <DependentUpon>BirthNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthStatus.aspx.cs">
+      <DependentUpon>BirthStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthStatus.aspx.designer.cs">
+      <DependentUpon>BirthStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthTransfer.aspx.cs">
+      <DependentUpon>BirthTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BirthRegistration\BirthTransfer.aspx.designer.cs">
+      <DependentUpon>BirthTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessCalculator.aspx.cs">
+      <DependentUpon>BusinessCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessCalculator.aspx.designer.cs">
+      <DependentUpon>BusinessCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessClosure.aspx.cs">
+      <DependentUpon>BusinessClosure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessClosure.aspx.designer.cs">
+      <DependentUpon>BusinessClosure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessDashboard.aspx.cs">
+      <DependentUpon>BusinessDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessDashboard.aspx.designer.cs">
+      <DependentUpon>BusinessDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessGuidelines.aspx.cs">
+      <DependentUpon>BusinessGuidelines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessGuidelines.aspx.designer.cs">
+      <DependentUpon>BusinessGuidelines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessRegister.aspx.cs">
+      <DependentUpon>BusinessRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessRegister.aspx.designer.cs">
+      <DependentUpon>BusinessRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessRenewal.aspx.cs">
+      <DependentUpon>BusinessRenewal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessRenewal.aspx.designer.cs">
+      <DependentUpon>BusinessRenewal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessStatus.aspx.cs">
+      <DependentUpon>BusinessStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessRegistration\BusinessStatus.aspx.designer.cs">
+      <DependentUpon>BusinessStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\Citizenship.aspx.cs">
       <DependentUpon>Citizenship.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Citizenship.aspx.designer.cs">
+    <Compile Include="CitizenshipRegistration\Citizenship.aspx.designer.cs">
       <DependentUpon>Citizenship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipCopy.aspx.cs">
+      <DependentUpon>CitizenshipCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipCopy.aspx.designer.cs">
+      <DependentUpon>CitizenshipCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipCorrection.aspx.cs">
+      <DependentUpon>CitizenshipCorrection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipCorrection.aspx.designer.cs">
+      <DependentUpon>CitizenshipCorrection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipNew.aspx.cs">
+      <DependentUpon>CitizenshipNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipNew.aspx.designer.cs">
+      <DependentUpon>CitizenshipNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipRenew.aspx.cs">
+      <DependentUpon>CitizenshipRenew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipRenew.aspx.designer.cs">
+      <DependentUpon>CitizenshipRenew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipStatus.aspx.cs">
+      <DependentUpon>CitizenshipStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipStatus.aspx.designer.cs">
+      <DependentUpon>CitizenshipStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipTransfer.aspx.cs">
+      <DependentUpon>CitizenshipTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CitizenshipRegistration\CitizenshipTransfer.aspx.designer.cs">
+      <DependentUpon>CitizenshipTransfer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Complaint.aspx.cs">
       <DependentUpon>Complaint.aspx</DependentUpon>
@@ -135,40 +309,54 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Deathregistration\deathregistration.aspx.cs">
-      <DependentUpon>deathregistration.aspx</DependentUpon>
+    <Compile Include="DeathRegistration\Death.aspx.cs">
+      <DependentUpon>Death.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Deathregistration\deathregistration.aspx.designer.cs">
-      <DependentUpon>deathregistration.aspx</DependentUpon>
+    <Compile Include="DeathRegistration\Death.aspx.designer.cs">
+      <DependentUpon>Death.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Deathregistration\ApplyNew.aspx.cs">
-      <DependentUpon>ApplyNew.aspx</DependentUpon>
+    <Compile Include="DeathRegistration\DeathCopy.aspx.cs">
+      <DependentUpon>DeathCopy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Deathregistration\ApplyNew.aspx.designer.cs">
-      <DependentUpon>ApplyNew.aspx</DependentUpon>
+    <Compile Include="DeathRegistration\DeathCopy.aspx.designer.cs">
+      <DependentUpon>DeathCopy.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Deathregistration\CancelRecord.aspx.cs">
-      <DependentUpon>CancelRecord.aspx</DependentUpon>
+    <Compile Include="DeathRegistration\DeathCorrection.aspx.cs">
+      <DependentUpon>DeathCorrection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Deathregistration\CancelRecord.aspx.designer.cs">
-      <DependentUpon>CancelRecord.aspx</DependentUpon>
+    <Compile Include="DeathRegistration\DeathCorrection.aspx.designer.cs">
+      <DependentUpon>DeathCorrection.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Deathregistration\EditRecord.aspx.cs">
-      <DependentUpon>EditRecord.aspx</DependentUpon>
+    <Compile Include="DeathRegistration\DeathLate.aspx.cs">
+      <DependentUpon>DeathLate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Deathregistration\EditRecord.aspx.designer.cs">
-      <DependentUpon>EditRecord.aspx</DependentUpon>
+    <Compile Include="DeathRegistration\DeathLate.aspx.designer.cs">
+      <DependentUpon>DeathLate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Deathregistration\RequestCopy.aspx.cs">
-      <DependentUpon>RequestCopy.aspx</DependentUpon>
+    <Compile Include="DeathRegistration\DeathNew.aspx.cs">
+      <DependentUpon>DeathNew.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Deathregistration\RequestCopy.aspx.designer.cs">
-      <DependentUpon>RequestCopy.aspx</DependentUpon>
+    <Compile Include="DeathRegistration\DeathNew.aspx.designer.cs">
+      <DependentUpon>DeathNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeathRegistration\DeathStatus.aspx.cs">
+      <DependentUpon>DeathStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeathRegistration\DeathStatus.aspx.designer.cs">
+      <DependentUpon>DeathStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeathRegistration\DeathTransfer.aspx.cs">
+      <DependentUpon>DeathTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeathRegistration\DeathTransfer.aspx.designer.cs">
+      <DependentUpon>DeathTransfer.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -184,12 +372,40 @@
     <Compile Include="home.Master.designer.cs">
       <DependentUpon>home.Master</DependentUpon>
     </Compile>
-    <Compile Include="Info.aspx.cs">
-      <DependentUpon>Info.aspx</DependentUpon>
+    <Compile Include="MigrationRegistration\Migration.aspx.cs">
+      <DependentUpon>Migration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Info.aspx.designer.cs">
-      <DependentUpon>Info.aspx</DependentUpon>
+    <Compile Include="MigrationRegistration\Migration.aspx.designer.cs">
+      <DependentUpon>Migration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MigrationRegistration\MigrationCertificate.aspx.cs">
+      <DependentUpon>MigrationCertificate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MigrationRegistration\MigrationCertificate.aspx.designer.cs">
+      <DependentUpon>MigrationCertificate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MigrationRegistration\MigrationIn.aspx.cs">
+      <DependentUpon>MigrationIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MigrationRegistration\MigrationIn.aspx.designer.cs">
+      <DependentUpon>MigrationIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MigrationRegistration\MigrationOut.aspx.cs">
+      <DependentUpon>MigrationOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MigrationRegistration\MigrationOut.aspx.designer.cs">
+      <DependentUpon>MigrationOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MigrationRegistration\MigrationStatus.aspx.cs">
+      <DependentUpon>MigrationStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MigrationRegistration\MigrationStatus.aspx.designer.cs">
+      <DependentUpon>MigrationStatus.aspx</DependentUpon>
     </Compile>
     <Compile Include="NewsNotices.aspx.cs">
       <DependentUpon>NewsNotices.aspx</DependentUpon>
@@ -209,14 +425,119 @@
     <Compile Include="members.aspx.designer.cs">
       <DependentUpon>members.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Passport.aspx.cs">
+    <Compile Include="Passport\Passport.aspx.cs">
       <DependentUpon>Passport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Passport.aspx.designer.cs">
+    <Compile Include="Passport\Passport.aspx.designer.cs">
       <DependentUpon>Passport.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Passport\PassportAppointment.aspx.cs">
+      <DependentUpon>PassportAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passport\PassportAppointment.aspx.designer.cs">
+      <DependentUpon>PassportAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passport\PassportChecklist.aspx.cs">
+      <DependentUpon>PassportChecklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passport\PassportChecklist.aspx.designer.cs">
+      <DependentUpon>PassportChecklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passport\PassportGuidelines.aspx.cs">
+      <DependentUpon>PassportGuidelines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passport\PassportGuidelines.aspx.designer.cs">
+      <DependentUpon>PassportGuidelines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passport\PassportLost.aspx.cs">
+      <DependentUpon>PassportLost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passport\PassportLost.aspx.designer.cs">
+      <DependentUpon>PassportLost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passport\PassportMinor.aspx.cs">
+      <DependentUpon>PassportMinor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passport\PassportMinor.aspx.designer.cs">
+      <DependentUpon>PassportMinor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passport\PassportNew.aspx.cs">
+      <DependentUpon>PassportNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passport\PassportNew.aspx.designer.cs">
+      <DependentUpon>PassportNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passport\PassportRenewal.aspx.cs">
+      <DependentUpon>PassportRenewal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passport\PassportRenewal.aspx.designer.cs">
+      <DependentUpon>PassportRenewal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passport\PassportStatus.aspx.cs">
+      <DependentUpon>PassportStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passport\PassportStatus.aspx.designer.cs">
+      <DependentUpon>PassportStatus.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyTax\PropertyRegister.aspx.cs">
+      <DependentUpon>PropertyRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyTax\PropertyRegister.aspx.designer.cs">
+      <DependentUpon>PropertyRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyTax\PropertyTax.aspx.cs">
+      <DependentUpon>PropertyTax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyTax\PropertyTax.aspx.designer.cs">
+      <DependentUpon>PropertyTax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyTax\TaxCalculator.aspx.cs">
+      <DependentUpon>TaxCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyTax\TaxCalculator.aspx.designer.cs">
+      <DependentUpon>TaxCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyTax\TaxClearance.aspx.cs">
+      <DependentUpon>TaxClearance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyTax\TaxClearance.aspx.designer.cs">
+      <DependentUpon>TaxClearance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyTax\TaxDiscount.aspx.cs">
+      <DependentUpon>TaxDiscount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyTax\TaxDiscount.aspx.designer.cs">
+      <DependentUpon>TaxDiscount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyTax\TaxHistory.aspx.cs">
+      <DependentUpon>TaxHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyTax\TaxHistory.aspx.designer.cs">
+      <DependentUpon>TaxHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyTax\TaxRates.aspx.cs">
+      <DependentUpon>TaxRates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PropertyTax\TaxRates.aspx.designer.cs">
+      <DependentUpon>TaxRates.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Service.aspx.cs">
       <DependentUpon>Service.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -224,12 +545,12 @@
     <Compile Include="Service.aspx.designer.cs">
       <DependentUpon>Service.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Signup.aspx.cs">
-      <DependentUpon>Signup.aspx</DependentUpon>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Signup.aspx.designer.cs">
-      <DependentUpon>Signup.aspx</DependentUpon>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -242,9 +563,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="services\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
