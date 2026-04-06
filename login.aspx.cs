@@ -1,43 +1,86 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace HamroWard
 {
     public partial class Login : System.Web.UI.Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            lblMessage.Text = ""; // Clear any previous messages on page load
+        }
+
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
-            string ConnString = ConfigurationManager.ConnectionStrings["MyConn"].ConnectionString;
+            string loginInput = txtUsername.Text.Trim(); // Phone number
+            string password = txtPassword.Text.Trim();
 
-            using (SqlConnection con = new SqlConnection(ConnString))
+            if (string.IsNullOrEmpty(loginInput) || string.IsNullOrEmpty(password))
             {
-                string query = "SELECT COUNT(*) FROM signUpDbTable WHERE userName=@user AND password=@pass";
+                lblMessage.Text = "Please enter Phone and Password.";
+                return;
+            }
 
-                using (SqlCommand cmd = new SqlCommand(query, con))
+            string connStr = ConfigurationManager.ConnectionStrings["MyDB"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                try
                 {
-                    cmd.Parameters.AddWithValue("@user", txtUsername.Text.Trim());
-                    cmd.Parameters.AddWithValue("@pass", txtPassword.Text.Trim());
+                    conn.Open();
+                    // Match columns exactly: UserId, Phone, PasswordHash
+                    string query = "SELECT UserId, PasswordHash FROM Users WHERE Phone = @Login";
 
-                    try
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@Login", loginInput);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        con.Open();
-                        int userCount = (int)cmd.ExecuteScalar();
-
-                        if (userCount > 0)
+                        if (reader.Read())
                         {
-                            Response.Redirect("default.aspx");
+                            // Access columns using the exact names from your screenshot
+                            string storedHash = reader["PasswordHash"].ToString();
+                            string enteredHash = HashPassword(password);
+
+                            if (enteredHash == storedHash)
+                            {
+                                Session["UserId"] = reader["UserId"].ToString();
+                                Session["LoginUser"] = loginInput;
+                                Response.Redirect("/");
+                            }
+                            else
+                            {
+                                lblMessage.Text = "Invalid Phone or Password.";
+                            }
                         }
                         else
                         {
-                            lblMessage.Text = "Invalid Username or Password.";
+                            lblMessage.Text = "User not found.";
                         }
                     }
-                    catch (Exception ex)
-                    {
-                        lblMessage.Text = "Database Error: " + ex.Message;
-                    }
                 }
+                catch (Exception ex)
+                {
+                    lblMessage.Text = "Error: " + ex.Message;
+                }
+            }
+        }
+
+        // SHA256 password hashing
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha = SHA256.Create())
+            {
+                byte[] bytes = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                foreach (byte b in bytes)
+                {
+                    builder.Append(b.ToString("x2"));
+                }
+                return builder.ToString();
             }
         }
     }

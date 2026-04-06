@@ -126,7 +126,7 @@
 
             <asp:Label ID="lblMessage" runat="server" CssClass="error-msg"></asp:Label>
 
-            <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" placeholder="👤 Username"></asp:TextBox>
+            <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" placeholder="👤 Citizenship No / Phone"></asp:TextBox>
 
             <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" placeholder="🔒 Password"></asp:TextBox>
 
