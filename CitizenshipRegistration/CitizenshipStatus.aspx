@@ -6,7 +6,7 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap');
     :root { --crimson: #DC143C; --navy: #002B7F; --crimson-light: rgba(220,20,60,0.08); --navy-light: rgba(0,43,127,0.07); }
-    body { font-family: 'Inter','Noto Sans Devanagari',system-ui,sans-serif; background: linear-gradient(160deg,#f1f5f9 0%,#e0e7ff 100%); color: #1e2937; line-height: 1.6; margin-top: 50px; }
+    body { font-family: 'Inter','Noto Sans Devanagari',system-ui,sans-serif; background: linear-gradient(160deg,#f1f5f9 0%,#e0e7ff 100%); color: #1e2937; line-height: 1.6; }
     .page-hero { background: linear-gradient(135deg,var(--crimson) 0%,var(--navy) 100%); padding: 36px 0 28px; margin-bottom: 36px; position: relative; overflow: hidden; }
     .page-hero::before { content:''; position:absolute; inset:0; background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
     .flag-bar { height:10px; background:repeating-linear-gradient(90deg,var(--crimson) 0,var(--crimson) 24px,var(--navy) 24px,var(--navy) 48px); }
@@ -40,7 +40,9 @@
     .result-panel { display:none; }
 </style>
 
+    <!--
 <div class="flag-bar"></div>
+    -->
 <div class="page-hero">
     <div class="hero-inner">
         <div class="hero-emblem">🔍</div>

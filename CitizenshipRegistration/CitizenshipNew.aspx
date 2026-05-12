@@ -18,7 +18,7 @@
         background: linear-gradient(160deg, #f1f5f9 0%, #e0e7ff 100%);
         color: #1e2937;
         line-height: 1.6;
-        margin-top: 50px;
+        
     }
 
     /* ── Page Header ── */
@@ -264,9 +264,12 @@
         </div>
     </div>
 </div>
-<div class="flag-bar"></div>
 
-<main class="container-xl py-4">
+    <!--
+<div class="flag-bar"></div>
+    -->
+
+<main class="container-xl py-2">
 
     <!-- Breadcrumb — updated for subfolder -->
     <nav class="breadcrumb-wrap mb-4">

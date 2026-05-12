@@ -269,7 +269,10 @@
 </style>
 
 <!-- Flag Bar -->
+
+    <!--
 <div class="flag-bar"></div>
+    -->
 
 <!-- Hero -->
 <div class="page-hero">
