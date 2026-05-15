@@ -2,8 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-
-
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap');
 
@@ -180,6 +178,63 @@
         background: #fefce8;
         color: #92400e;
     }
+
+    /* ── Search Form ── */
+    .search-section {
+        max-width: 560px;
+        margin: 0 auto 60px;
+        background: white;
+        border-radius: 20px;
+        padding: 36px 32px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+        border: 2px solid #e8eaf0;
+    }
+    .search-section h3 {
+        color: var(--navy);
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+    .search-section p {
+        color: #6b7280;
+        font-size: 0.88rem;
+        margin-bottom: 24px;
+    }
+    .search-section label {
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: #374151;
+        display: block;
+        margin-bottom: 6px;
+    }
+    .search-section .form-control {
+        width: 100%;
+        padding: 10px 14px;
+        border: 1.5px solid #d1d5db;
+        border-radius: 10px;
+        font-size: 0.95rem;
+        margin-bottom: 18px;
+        transition: border-color 0.2s;
+        box-sizing: border-box;
+    }
+    .search-section .form-control:focus {
+        border-color: var(--crimson);
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(220,20,60,0.1);
+    }
+    .btn-search {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, var(--crimson), var(--navy));
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+    .btn-search:hover { opacity: 0.9; }
 </style>
 
 <div class="flag-bar"></div>
@@ -206,7 +261,7 @@
         <h2>Select a Death Registration Service &nbsp;/&nbsp; मृत्यु दर्ता सेवा छान्नुहोस्</h2>
     </div>
 
-
+    <!-- Service Cards -->
     <div class="service-grid">
 
         <a href="~/DeathRegistration/DeathNew.aspx" runat="server" class="service-card">
@@ -220,12 +275,10 @@
 
         <a href="~/DeathRegistration/DeathStatus.aspx" runat="server" class="service-card">
             <div class="service-icon">🔍</div>
-            
             <div>
                 <p class="service-title">Check Application Status</p>
                 <p class="service-title-nep">आवेदन स्थिति जाँच्नुहोस्</p>
             </div>
-                
             <span class="service-badge badge-info">स्थिति ट्र्याक गर्नुहोस् (Track Status)</span>
         </a>
 
@@ -257,6 +310,24 @@
         </a>
 
     </div>
+
+    <!-- Search / Track Application Form -->
+    <div class="search-section">
+        <h3>🔎 Track Your Application &nbsp;/&nbsp; आवेदन ट्र्याक गर्नुहोस्</h3>
+        <p>Enter your application number and citizenship number to check status.</p>
+
+        <label for="txtDeathAppNo">Application Number &nbsp;/&nbsp; आवेदन नम्बर</label>
+        <asp:TextBox ID="txtDeathAppNo" runat="server" CssClass="form-control"
+            placeholder="e.g. DEATH-2081-00123" />
+
+        <label for="txtInformantCitizen">Citizenship Number &nbsp;/&nbsp; नागरिकता नम्बर</label>
+        <asp:TextBox ID="txtInformantCitizen" runat="server" CssClass="form-control"
+            placeholder="e.g. 12-34-56-78901" />
+
+        <asp:Button ID="BtnDeathSearch" runat="server" Text="Search Status / स्थिति खोज्नुहोस्"
+            CssClass="btn-search" OnClick="BtnDeathSearch_Click" />
+    </div>
+
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

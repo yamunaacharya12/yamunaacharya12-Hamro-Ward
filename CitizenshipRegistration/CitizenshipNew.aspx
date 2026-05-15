@@ -625,11 +625,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    function toggleSection(sectionId, show) {
-        var el = document.getElementById(sectionId);
-        if (el) el.style.display = show ? 'block' : 'none';
-    }
-    function toggleDeathCert(parent, value) { }
+function toggleSection(parent, sectionId, show) {
+    var el = document.getElementById(sectionId);
+    if (el) el.style.display = show ? 'block' : 'none';
+}
 </script>
+
 
 </asp:Content>
