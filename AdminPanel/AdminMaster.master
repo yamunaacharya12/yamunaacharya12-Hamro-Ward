@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="HamroWard.AdminPanel.AdminMaster" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Hamro Ward - Admin Panel</title>
+    <meta charset="utf-8" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; display: flex; min-height: 100vh; }
+
+        .sidebar {
+            width: 220px;
+            background: #1e2a3a;
+            color: #fff;
+            padding: 20px 0;
+            min-height: 100vh;
+            flex-shrink: 0;
+        }
+        .sidebar h2 {
+            text-align: center;
+            font-size: 16px;
+            padding: 10px 20px 20px;
+            border-bottom: 1px solid #2e3f52;
+            color: #a8d8ea;
+        }
+        .sidebar ul { list-style: none; margin-top: 10px; }
+        .sidebar ul li a {
+            display: block;
+            padding: 12px 20px;
+            color: #cdd6e0;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .sidebar ul li a:hover { background: #2e3f52; color: #fff; }
+        .sidebar .section-label {
+            padding: 14px 20px 4px;
+            font-size: 11px;
+            color: #6b7f94;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .sidebar .logout {
+            margin-top: 30px;
+            padding: 12px 20px;
+            display: block;
+            color: #e07070;
+            text-decoration: none;
+            font-size: 14px;
+            border-top: 1px solid #2e3f52;
+        }
+
+        .main-content { flex: 1; background: #f4f6f9; padding: 30px; }
+        .topbar {
+            background: #fff;
+            padding: 14px 20px;
+            margin-bottom: 24px;
+            border-radius: 6px;
+            border: 1px solid #dde1e7;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="AdminForm" runat="server">
+        <div class="sidebar">
+            <h2>Hamro Ward Admin</h2>
+            <ul>
+                <li><a href="~/AdminPanel/Dashboard.aspx" runat="server">Dashboard</a></li>
+            </ul>
+
+            <div class="section-label">Registrations</div>
+            <ul>
+                <li><a href="~/BirthRegistration/BirthList.aspx" runat="server">Birth Registration</a></li>
+                <li><a href="~/DeathRegistration/DeathList.aspx" runat="server">Death Registration</a></li>
+                <li><a href="~/MigrationRegistration/MigrationList.aspx" runat="server">Migration</a></li>
+                <li><a href="~/CitizenshipRegistration/CitizenshipList.aspx" runat="server">Citizenship</a></li>
+            </ul>
+
+            <div class="section-label">Settings</div>
+            <ul>
+                <li><a href="~/AdminPanel/ManageUsers.aspx" runat="server">Manage Users</a></li>
+            </ul>
+
+            <a class="logout" href="~/AdminPanel/Logout.aspx" runat="server">Logout</a>
+        </div>
+
+        <div class="main-content">
+            <div class="topbar">
+                Welcome, Admin &nbsp;|&nbsp;
+                <asp:Label ID="lblCurrentPage" runat="server" Text="Dashboard" />
+            </div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </form>
+</body>
+</html>
