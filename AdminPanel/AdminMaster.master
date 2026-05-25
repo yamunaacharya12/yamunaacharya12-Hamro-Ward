@@ -1,98 +1,224 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="HamroWard.AdminPanel.AdminMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="HamroWard.AdminMaster" %>
+
 <!DOCTYPE html>
 <html>
 <head runat="server">
-    <title>Hamro Ward - Admin Panel</title>
-    <meta charset="utf-8" />
+    <title>Admin Master</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; display: flex; min-height: 100vh; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            height: 100%;
+            background-color: #f0f4f9;
+            color: #2c3e50;
+            overflow: hidden;
+        }
+        .admin-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
 
+        /* Sidebar container optimized with full vertical scrolling for long menus */
         .sidebar {
-            width: 220px;
-            background: #1e2a3a;
-            color: #fff;
-            padding: 20px 0;
-            min-height: 100vh;
+            width: 290px;
+            background-color: #ffffff;
+            border-right: 1px solid #e1e8ed;
+            padding: 24px 16px;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            box-shadow: 4px 0 20px rgba(0, 0, 0, 0.02);
+            overflow-y: auto;
+        }
+
+        .sidebar-brand {
+            font-size: 22px;
+            font-weight: 700;
+            color: #511f5e;
+            padding: 0 12px 24px 12px;
+            border-bottom: 2px solid #f0f4f9;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
             flex-shrink: 0;
         }
-        .sidebar h2 {
-            text-align: center;
-            font-size: 16px;
-            padding: 10px 20px 20px;
-            border-bottom: 1px solid #2e3f52;
-            color: #a8d8ea;
-        }
-        .sidebar ul { list-style: none; margin-top: 10px; }
-        .sidebar ul li a {
-            display: block;
-            padding: 12px 20px;
-            color: #cdd6e0;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .sidebar ul li a:hover { background: #2e3f52; color: #fff; }
-        .sidebar .section-label {
-            padding: 14px 20px 4px;
+
+        /* Category Header Labels */
+        .sidebar-category {
             font-size: 11px;
-            color: #6b7f94;
             text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .sidebar .logout {
-            margin-top: 30px;
-            padding: 12px 20px;
-            display: block;
-            color: #e07070;
-            text-decoration: none;
-            font-size: 14px;
-            border-top: 1px solid #2e3f52;
+            letter-spacing: 1.2px;
+            color: #94a3b8;
+            font-weight: 700;
+            padding: 18px 12px 8px 12px;
         }
 
-        .main-content { flex: 1; background: #f4f6f9; padding: 30px; }
-        .topbar {
-            background: #fff;
-            padding: 14px 20px;
-            margin-bottom: 24px;
-            border-radius: 6px;
-            border: 1px solid #dde1e7;
-            font-size: 14px;
-            color: #555;
+        .sidebar ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .sidebar ul li a {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #64748b;
+            padding: 12px 16px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 14.5px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .sidebar ul li a i {
+            font-size: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #f8fafc;
+            color: #511f5e;
+        }
+        
+        .sidebar ul li a:hover i {
+            transform: translateX(3px);
+        }
+
+        .sidebar ul li a.active {
+            background: linear-gradient(135deg, #a81c51 0%, #1e1b70 100%);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(30, 27, 112, 0.25);
+        }
+
+        .content-panel {
+            flex: 1;
+            height: 100%;
+            background-color: #f0f4f9;
+            padding: 16px;
+        }
+
+        .iframe-container {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e1e8ed;
+        }
+
+        .content-panel iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
         }
     </style>
-    <asp:ContentPlaceHolder ID="head" runat="server" />
 </head>
 <body>
-    <form id="AdminForm" runat="server">
-        <div class="sidebar">
-            <h2>Hamro Ward Admin</h2>
-            <ul>
-                <li><a href="~/AdminPanel/Dashboard.aspx" runat="server">Dashboard</a></li>
-            </ul>
+    <form id="form1" runat="server">
+        <div class="admin-container">
+            
+            <aside class="sidebar">
+                <div class="sidebar-brand">
+                    <i class='bx bxs-institution'></i> Hamro Ward
+                </div>
+                
+                <div class="sidebar-category">Core</div>
+                <ul>
+                    <li>
+                        <a data-target="Dashboard.aspx" class="sidebar-link">
+                            <i class='bx bxs-dashboard'></i>Dashboard
+                        </a>
+                    </li>
+                </ul>
 
-            <div class="section-label">Registrations</div>
-            <ul>
-                <li><a href="~/BirthRegistration/BirthList.aspx" runat="server">Birth Registration</a></li>
-                <li><a href="~/DeathRegistration/DeathList.aspx" runat="server">Death Registration</a></li>
-                <li><a href="~/MigrationRegistration/MigrationList.aspx" runat="server">Migration</a></li>
-                <li><a href="~/CitizenshipRegistration/CitizenshipList.aspx" runat="server">Citizenship</a></li>
-            </ul>
+                <div class="sidebar-category">Vital Registration</div>
+                <ul>
+                    <li>
+                        <a data-target="BirthList.aspx" class="sidebar-link">
+                            <i class='bx bxs-baby-carriage'></i>Birth Records
+                        </a>
+                    </li>
+                    <li>
+                        <a data-target="DeathList.aspx" class="sidebar-link active">
+                            <i class='bx bxs-user-x'></i>Death Records
+                        </a>
+                    </li>
+                    <li>
+                        <a data-target="MarriageAdmin.aspx" class="sidebar-link">
+                            <i class='bx bxs-heart-square'></i>Marriage Records
+                        </a>
+                    </li>
+                    <li>
+                        <a data-target="MigrationList.aspx" class="sidebar-link">
+                            <i class='bx bxs-map-pin'></i>Migration Records
+                        </a>
+                    </li>
+                </ul>
 
-            <div class="section-label">Settings</div>
-            <ul>
-                <li><a href="~/AdminPanel/ManageUsers.aspx" runat="server">Manage Users</a></li>
-            </ul>
+                <div class="sidebar-category">Management</div>
+                <ul>
+                    <li>
+                        <a data-target="CitizenshipList.aspx" class="sidebar-link">
+                            <i class='bx bxs-id-card'></i>Citizenship Applications
+                        </a>
+                    </li>
+                    <li>
+                        <a data-target="TaxAdmin.aspx" class="sidebar-link">
+                            <i class='bx bxs-wallet'></i>Tax Administration
+                        </a>
+                    </li>
+                </ul>
+            </aside>
 
-            <a class="logout" href="~/AdminPanel/Logout.aspx" runat="server">Logout</a>
-        </div>
+            <main class="content-panel">
+                <div class="iframe-container">
+                    <iframe id="contentPaneIframe" name="contentPane" src="DeathList.aspx"></iframe>
+                </div>
+                
+                <div style="display:none;">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </main>
 
-        <div class="main-content">
-            <div class="topbar">
-                Welcome, Admin &nbsp;|&nbsp;
-                <asp:Label ID="lblCurrentPage" runat="server" Text="Dashboard" />
-            </div>
-            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
         </div>
     </form>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            const contentIframe = document.getElementById("contentPaneIframe");
+            const links = document.querySelectorAll(".sidebar-link");
+
+            links.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    links.forEach(l => l.classList.remove("active"));
+                    this.classList.add("active");
+
+                    const targetPage = this.getAttribute("data-target");
+
+                    if (targetPage && contentIframe) {
+                        contentIframe.src = targetPage;
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
