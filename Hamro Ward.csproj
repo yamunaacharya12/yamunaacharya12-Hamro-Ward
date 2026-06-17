@@ -43,6 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="AdminPanel\BirthList.aspx" />
+    <Content Include="AdminPanel\CitizenshipList.aspx" />
+    <Content Include="AdminPanel\Dashboard.aspx" />
+    <Content Include="AdminPanel\DeathList.aspx" />
+    <Content Include="AdminPanel\Login.aspx" />
+    <Content Include="AdminPanel\Logout.aspx" />
+    <Content Include="AdminPanel\MarriageAdmin.aspx" />
+    <Content Include="AdminPanel\MigrationList.aspx" />
+    <Content Include="AdminPanel\TaxAdmin.aspx" />
     <Content Include="BirthConfirmation.aspx" />
     <Content Include="BirthForm.aspx" />
     <Content Include="BirthRegistration\Birth.aspx" />
@@ -85,6 +94,75 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPanel\AdminMaster.master.cs">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\AdminMaster.master.designer.cs">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\BirthList.aspx.cs">
+      <DependentUpon>BirthList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\BirthList.aspx.designer.cs">
+      <DependentUpon>BirthList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\CitizenshipList.aspx.cs">
+      <DependentUpon>CitizenshipList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\CitizenshipList.aspx.designer.cs">
+      <DependentUpon>CitizenshipList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\DeathList.aspx.cs">
+      <DependentUpon>DeathList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\DeathList.aspx.designer.cs">
+      <DependentUpon>DeathList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\MarriageAdmin.aspx.cs">
+      <DependentUpon>MarriageAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\MarriageAdmin.aspx.designer.cs">
+      <DependentUpon>MarriageAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\MigrationList.aspx.cs">
+      <DependentUpon>MigrationList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\MigrationList.aspx.designer.cs">
+      <DependentUpon>MigrationList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\TaxAdmin.aspx.cs">
+      <DependentUpon>TaxAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\TaxAdmin.aspx.designer.cs">
+      <DependentUpon>TaxAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BirthConfirmation.aspx.cs">
       <DependentUpon>BirthConfirmation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -429,6 +507,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="home.Master" />
+    <Content Include="AdminPanel\AdminMaster.master" />
+    <Content Include="AdminPanel\desktop.ini" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -451,6 +531,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
